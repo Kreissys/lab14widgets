@@ -9,8 +9,6 @@ import androidx.glance.Button
 import androidx.glance.GlanceId
 import androidx.glance.GlanceModifier
 import androidx.glance.GlanceTheme
-import androidx.glance.Image
-import androidx.glance.ImageProvider
 import androidx.glance.action.actionStartActivity
 import androidx.glance.appwidget.GlanceAppWidget
 import androidx.glance.appwidget.cornerRadius
@@ -238,7 +236,7 @@ class GameStatsWidgetContent : GlanceAppWidget() {
             // Botón principal: JUGAR AHORA
             Button(
                 text = "▶️ JUGAR AHORA",
-                onClick = actionStartActivity<MainActivity>(),
+                onClick = actionStartActivity<GameActivity>(),
                 modifier = GlanceModifier
                     .fillMaxWidth()
                     .height(45.dp)
@@ -260,7 +258,7 @@ class GameStatsWidgetContent : GlanceAppWidget() {
             ) {
                 Button(
                     text = "🏆 Ranking",
-                    onClick = actionStartActivity<SecondActivity>(),
+                    onClick = actionStartActivity<RankingActivity>(),
                     modifier = GlanceModifier
                         .defaultWeight()
                         .height(40.dp)
@@ -276,7 +274,7 @@ class GameStatsWidgetContent : GlanceAppWidget() {
 
                 Button(
                     text = "🎁 Tienda",
-                    onClick = actionStartActivity<MainActivity>(),
+                    onClick = actionStartActivity<ShopActivity>(),
                     modifier = GlanceModifier
                         .defaultWeight()
                         .height(40.dp)

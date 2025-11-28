@@ -28,6 +28,25 @@
             android:exported="false"
             android:theme="@style/Theme.Lab14Widgets" />
 
+        <!-- Activities del juego BlindForge -->
+        <activity
+            android:name=".GameActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Lab14Widgets"
+            android:label="BlindForge - Juego" />
+
+        <activity
+            android:name=".RankingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Lab14Widgets"
+            android:label="BlindForge - Ranking" />
+
+        <activity
+            android:name=".ShopActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Lab14Widgets"
+            android:label="BlindForge - Tienda" />
+
         <!-- Widget Simple (ejercicio guiado) -->
         <receiver
             android:name=".SimpleWidget"
