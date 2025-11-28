@@ -28,6 +28,7 @@
             android:exported="false"
             android:theme="@style/Theme.Lab14Widgets" />
 
+        <!-- Widget Simple (ejercicio guiado) -->
         <receiver
             android:name=".SimpleWidget"
             android:exported="true">
@@ -37,6 +38,19 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/simple_widget_info" />
+        </receiver>
+
+        <!-- Widget del Juego BlindForge (ejercicio final) -->
+        <receiver
+            android:name=".GameStatsWidget"
+            android:exported="true"
+            android:label="BlindForge Stats">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/game_stats_widget_info" />
         </receiver>
 
     </application>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Lab14Widgets</string>
+    <string name="game_widget_description">Stats y acceso rápido a BlindForge</string>
 </resources>
